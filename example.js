@@ -5,15 +5,17 @@ const serve = require('./');
 const koa = require('koa');
 const app = koa();
 
-// $ GET /package.json
-// $ GET /
+// $ GET /static/package.json
+// $ GET /static/
 
-app.use(serve('.'));
+app.use(serve('.', {
+  pathPrefix: '/static'
+}));
 
 app.use(function *(next){
   yield next;
   if ('/' == this.path) {
-    this.body = 'Try `GET /package.json`';
+    this.body = 'Try `GET /static/package.json`';
   }
 })
 

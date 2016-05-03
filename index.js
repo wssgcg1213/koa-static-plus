@@ -38,6 +38,9 @@ function serve(root, opts) {
   if (!opts.defer) {
     return function *serve(next){
       if (this.method == 'HEAD' || this.method == 'GET') {
+        if (opts.pathPrefix && this.path.indexOf(opts.pathPrefix) === 0) {
+          this.path = this.path.slice(opts.pathPrefix.length);
+        }
         if (yield send(this, this.path, opts)) return;
       }
       yield* next;

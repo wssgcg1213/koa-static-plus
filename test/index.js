@@ -335,4 +335,34 @@ describe('serve(root)', function(){
       })
     })
   })
+  
+  describe('option - pathPrefix', function(){
+    describe('when pathPrefix = "/static"', function(){
+      it('should 200', function(done){
+        const app = koa();
+
+        app.use(serve('test/fixtures', {
+          index: 'index.html',
+          pathPrefix: '/static'
+        }));
+
+        request(app.listen())
+        .get('/static/world')
+        .expect(200, done);
+      })
+
+      it('should 200', function(done){
+        const app = koa();
+
+        app.use(serve('test/fixtures', {
+          index: 'index.html',
+          pathPrefix: '/static'
+        }));
+
+        request(app.listen())
+        .get('/static/world/')
+        .expect(200, done);
+      })
+    })
+  })
 })
