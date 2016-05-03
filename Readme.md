@@ -2,8 +2,6 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
-[![Dependency Status][david-image]][david-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
 
@@ -44,3 +42,12 @@ app.use(koaStaticPlus(path.join(__dirname, '../public'), {
 ## Liscense 
  
     MIT
+    
+[npm-image]: https://img.shields.io/npm/v/koa-static-plus.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/koa-static-plus
+[travis-image]: https://img.shields.io/travis/wssgcg1213/koa-static-plus.svg?style=flat-square
+[travis-url]: https://travis-ci.org/wssgcg1213/koa-static-plus
+[license-image]: http://img.shields.io/npm/l/koa-static.svg?style=flat-square
+[license-url]: LICENSE
+[downloads-image]: http://img.shields.io/npm/dm/koa-static-plus.svg?style=flat-square
+[downloads-url]: https://npmjs.org/package/koa-static-plus

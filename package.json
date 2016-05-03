@@ -2,7 +2,7 @@
   "name": "koa-static-plus",
   "description": "an extended middleware of koa-static(v2.0.0) for koa",
   "repository": "wssgcg1213/koa-static-plus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [
     "koa",
     "middleware",
