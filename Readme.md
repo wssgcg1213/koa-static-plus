@@ -1,5 +1,7 @@
 # koa-static-plus
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wssgcg1213/koa-static-plus.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
 [![License][license-image]][license-url]
